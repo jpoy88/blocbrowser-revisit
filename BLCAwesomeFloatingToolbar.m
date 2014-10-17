@@ -40,6 +40,7 @@
             for (NSString *currentTitle in self.currentTitles) {
                 
                 UILabel *label = [[UILabel alloc] init];
+                //[label setEnabled:NO];
                 label.userInteractionEnabled = NO;
                 label.alpha = 0.25;
                 
@@ -118,9 +119,7 @@
     self.currentLabel = label;
     self.currentLabel.alpha = 0.5;
     
-    if (self.currentLabel.userInteractionEnabled == NO) {
-        [self.currentLabel setEnabled:NO];
-    }
+    
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{

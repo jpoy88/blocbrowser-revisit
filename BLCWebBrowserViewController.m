@@ -53,6 +53,8 @@
     
     
     self.awesomeToolbar = [[BLCAwesomeFloatingToolbar alloc] initWithFourTitles:@[kBLCWebBrowsingBackString, kBLCWebBrowsingForwardString, kBLCWebBrowsingStopString, kBLCWebBrowsingRefreshString]];
+    
+    //[self.awesomeToolbar setEnabled:NO forButtonWithTitle:nil];
     self.awesomeToolbar.delegate = self;
     
     
